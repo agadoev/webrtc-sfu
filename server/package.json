@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle/index.js",
+  "scripts": {
+    "build": "tsc",
+    "server:run": "ts-node --project ./tsconfig.json ./src/main.ts",
+    "server:nodemon": "nodemon ./src/main.ts",
+	"client:run": "ts-node --project ./tsconfig.json dev.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.13",
+    "nodemon": "^2.0.15",
+    "rxjs": "^7.5.2",
+    "socket.io": "^4.4.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
