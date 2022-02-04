@@ -8,3 +8,5 @@ client.on("roomid", data => console.log(data))
 setTimeout(() => {
 	client.emit("createroom", {});
 }, 3000);
+
+console.log('test')
